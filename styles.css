@@ -179,6 +179,7 @@ background-image:  radial-gradient(#3D3B39 0.8px, transparent 0.8px), radial-gra
 background-size: 32px 32px;
 background-position: 0 0,16px 16px;
   border-radius: 3px;
+  /* border: white solid 3px; */
 }
 
 .img-container {
@@ -189,6 +190,7 @@ background-position: 0 0,16px 16px;
   overflow: hidden;
  
   background-color: white;
+  border: white solid 2px;
 }
 
 .profile-img {
