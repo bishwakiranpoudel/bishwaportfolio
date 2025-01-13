@@ -93,6 +93,67 @@ nav ul li:nth-child(1) {
   margin-right: 1rem;
 }
 
+.menu-icon {
+  display: none; /* Hide by default */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  
+  margin: 10px;
+  margin-left: auto;
+}
+
+.bar {
+  height: 4px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+  /* Show Hamburger Menu on Small Screens */
+  .menu-icon {
+    display: flex;
+  }
+
+  /* Hide the navigation items by default on small screens */
+  #nav-list {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    position: relative;
+   
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for contrast */
+}
+
+
+
+  /* Display the navigation items when the menu is active */
+  #nav-list.active {
+    display: flex;
+  }
+
+  /* Style for individual nav items */
+  nav li a {
+    font-size: 16px;
+    padding: 1rem;
+    text-align: left;
+    color: #F4F4F4;
+    border-bottom: 1px solid #ccc;
+  }
+
+  /* Ensure no extra space between items */
+  nav li:last-child a {
+    border-bottom: none;
+  }
+}
 /* HOME */
 
 /* edit this to center the contents */

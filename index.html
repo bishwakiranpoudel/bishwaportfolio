@@ -21,6 +21,13 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
+    <script>
+      function toggleMenu() {
+    const navList = document.getElementById('nav-list');
+    navList.classList.toggle('active');
+  }
+    </script>
+
 
     <noscript>
       <link
@@ -37,14 +44,18 @@
   <body>
     <!-- Navigation -->
     <nav>
-      <ul>
-        <li><a href="#top">HOME</a></li>
-        <li><a href="#project">PROJECTS</a></li>
-        <li><a href="#research">RESEARCHS</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#experience">EXPERIENCES</a></li>
-        <li><a href="#awards">AWARDS</a></li>
-        <li><a href="#certifications">CERTIFICATIONS</a></li>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul id="nav-list">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#certifications">Certifications</a></li>
       </ul>
     </nav>
     <!-- End of Navigation -->
