@@ -614,6 +614,10 @@ footer {
     margin-left: 30%;
     margin-right: 30%;
   }
+
+  .img-container{
+    display: none;
+  }
 }
 /* FOR DESKTOP */
 @media screen and (min-width: 1025px) {
@@ -626,6 +630,9 @@ footer {
   }
   .skill {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .img-container{
+    display: none;
   }
 }
 
