@@ -183,7 +183,7 @@ background-position: 0 0,16px 16px;
 }
 
 .img-container {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
