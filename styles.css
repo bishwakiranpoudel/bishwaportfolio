@@ -164,7 +164,7 @@ background-position: 0 0,16px 16px;
 .user-bio {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: white;
+  color: var(--font-color);
   max-width: 600px;
   margin: 1.5rem auto;
   text-align: center;
