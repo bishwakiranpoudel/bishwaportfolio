@@ -50,57 +50,38 @@
     <!-- End of Navigation -->
 
     <!-- Home -->
-    <section class="center">
+    <section class="center" id="top">
       <main>
         <!-- img and info container -->
         <div class="img-info-container">
-          <!-- profile picture -->
+          <!-- Profile Picture -->
           <div class="img-container">
             <img
-              width="90"
+              width="100"
               height="100"
               src="./asset/img/bishwa.png"
               alt="pfp"
+              class="profile-img"
             />
           </div>
-
-          <!-- info / the large text and social media -->
+        
+          <!-- Info Section -->
           <div class="info-container">
-            <!-- svg/social media container -->
-            <div class="social-container">
-              <!-- GITHUB -->
-              <a href="https://github.com/bishwakiranpoudel" target="_blank"
-                ><img
-                  width="24"
-                  height="24"
-                  src="./asset/svg/github.svg"
-                  alt="github"
-              /></a>
-
-              <!-- LINKEDIN -->
-              <a
-                href="https://www.linkedin.com/in/bishwakiranpoudel/"
-                target="_blank"
-                ><img
-                  width="24"
-                  height="24"
-                  src="./asset/svg/linkedin.svg"
-                  alt="linkedin"
-              /></a>
-            </div>
-
-            <!-- name -->
+            <!-- Social Media Links -->
+           
+        
+            <!-- Name -->
             <h1>Bishwa Kiran Poudel</h1>
             <hr />
           </div>
         </div>
-
+        
+        <!-- Bio Section -->
         <p class="user-bio">
           I’m Bishwa Kiran, a student pursuing a bachelor's degree in Computer Science and Information Technology with a keen interest in Artificial Intelligence, Machine Learning, and Data Science. <br />
           I thrive on exploring cutting-edge technologies to create innovative solutions that bridge data and intelligence.
-        <br/>
-        
         </p>
+        
        
         <div class="quote-container">
           <p>
@@ -112,12 +93,12 @@
           
         </div>
       </main>
-    </section>
+</section>
     
 
 <!-- Start of Project -->
-<section class="center">
-  <div id="project">
+<section class="center" id="project">
+  <div >
     <h2>PROJECTS</h2>
     <!-- project container/ grid -->
     <div class="project-container">
@@ -456,8 +437,8 @@
 </section>
 <!-- End of Project -->
 
-<section class="center">
-  <div id="research">
+<section class="center" id="research">
+  <div>
     <h2>RESEARCH</h2>
     <!-- Research container/ grid -->
     <div class="research-container">
@@ -534,63 +515,65 @@
 
     <!-- About -->
     <div class="center">
-      <div id="about">
-        <!-- Image  -->
-        <div class="about-img-container">
-          <img
-            width="80"
-            height="80"
-            src="./asset/img/bishwa.png"
-            alt="pfp"
-          />
+      <section id="about">
+        <div>
+          <!-- Image  -->
+          <div class="about-img-container">
+            <img
+              width="80"
+              height="80"
+              src="./asset/img/bishwa.png"
+              alt="pfp"
+            />
+          </div>
+          <!-- Name -->
+          <h2 class="greentext gradient">Bishwa Kiran Poudel</h2>
+          <!-- social media container -->
+          <ul class="about-social-container">
+            <li>
+              <img src="./asset/svg/github.svg" alt="Github" />
+              <a href="https://github.com/bishwakiranpoudel">Github</a>
+            </li>
+  
+            <li>
+              <img src="./asset/svg/mail.svg" alt="LinkedIn" />
+              <a href="#">Mail</a>
+            </li>
+  
+            <li>
+              <img src="./asset/svg/linkedin.svg" alt="LinkedIn" />
+              <a href="https://www.linkedin.com/in/bishwakiranpoudel/"> LinkedIn</a>
+            </li>
+          </ul>
+          <!-- long bio -->
+          <p>
+            Hi, I’m Bishwa Kiran Poudel, a student pursuing a Bachelor's degree in Computer Science and Information Technology, with a strong passion for Artificial Intelligence (AI), Machine Learning (ML), and Data Science.
+  
+  <br/>
+  I enjoy solving complex problems, building intelligent systems, and exploring innovative solutions that bridge data and technology. My journey is driven by a desire to learn continuously and stay ahead in the rapidly evolving tech landscape.
+  
+  <br/>
+  When I’m not coding or analyzing data, I’m exploring new ideas and advancements in AI and ML, aiming to create impactful solutions that make life smarter and more efficient.<br/>
+          </p>
+          <!-- Skills / Tools -->
+          <h3 class="greentext">Stack</h3>
+          <ul class="skill">
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>Numpy</li>
+            <li>Sklearn</li>
+            <li>Pytorch</li>
+            <li>TensorFlow</li>
+            <li>Django</li>
+            <li>Node.js</li>
+            <li>Fastapi</li>
+            <li>HuggingFace</li>
+            <li>OpenCV</li>
+            <li>React</li>
+            <li>Flutter</li>
+          </ul>
         </div>
-        <!-- Name -->
-        <h2 class="greentext gradient">Bishwa Kiran Poudel</h2>
-        <!-- social media container -->
-        <ul class="about-social-container">
-          <li>
-            <img src="./asset/svg/github.svg" alt="Github" />
-            <a href="https://github.com/bishwakiranpoudel">Github</a>
-          </li>
-
-          <li>
-            <img src="./asset/svg/mail.svg" alt="LinkedIn" />
-            <a href="#">Mail</a>
-          </li>
-
-          <li>
-            <img src="./asset/svg/linkedin.svg" alt="LinkedIn" />
-            <a href="https://www.linkedin.com/in/bishwakiranpoudel/"> LinkedIn</a>
-          </li>
-        </ul>
-        <!-- long bio -->
-        <p>
-          Hi, I’m Bishwa Kiran Poudel, a student pursuing a Bachelor's degree in Computer Science and Information Technology, with a strong passion for Artificial Intelligence (AI), Machine Learning (ML), and Data Science.
-
-<br/>
-I enjoy solving complex problems, building intelligent systems, and exploring innovative solutions that bridge data and technology. My journey is driven by a desire to learn continuously and stay ahead in the rapidly evolving tech landscape.
-
-<br/>
-When I’m not coding or analyzing data, I’m exploring new ideas and advancements in AI and ML, aiming to create impactful solutions that make life smarter and more efficient.<br/>
-        </p>
-        <!-- Skills / Tools -->
-        <h3 class="greentext">Stack</h3>
-        <ul class="skill">
-          <li>Python</li>
-          <li>Pandas</li>
-          <li>Numpy</li>
-          <li>Sklearn</li>
-          <li>Pytorch</li>
-          <li>TensorFlow</li>
-          <li>Django</li>
-          <li>Node.js</li>
-          <li>Fastapi</li>
-          <li>HuggingFace</li>
-          <li>OpenCV</li>
-          <li>React</li>
-          <li>Flutter</li>
-        </ul>
-      </div>
+      </section>
     </div>
     <section id="experience">
       <h2>Experience</h2>
