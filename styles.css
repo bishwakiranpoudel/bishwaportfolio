@@ -1,14 +1,21 @@
 :root {
-  --bg-color: #070a2d;
-  --font-color: #F4F4F4; /* A light, neutral color for general text to maintain high readability. */
-  --link-color: #3D3B39; /* A vivid yet soft blue that contrasts well and feels approachable. */
-  --text-color-1: #3D3B39; /* A muted teal that complements your greenish background while standing out. */
-  --text-color-2: #E9F7DF; /* A soft, pastel greenish-yellow for accents, maintaining harmony with the palette. */
-  --headline-color: #FFFFFF; 
+  --bg-color: #0F172A; /* A deep navy blue for a modern and calming dark theme */
+  --font-color: #EDEDED; /* Soft white for high readability on the dark background */
+  --link-color: #38BDF8; /* A bright sky blue for links, ensuring a vibrant yet soft look */
+  --text-color-1: #3D3B39; /* Warm medium gray for secondary text, providing subtle contrast */
+  --text-color-2: #FACC15; /* A warm amber yellow for attention-grabbing highlights */
+  --headline-color: #FFFFFF; /* Pure white for crisp and clear headings */
+
+  --my-green: #22C55E; /* A fresh, vibrant green for positive or success-driven elements */
+  --my-black: #1E293B; /* A rich, dark slate blue-gray for section backgrounds */
 }
 
+
+
+
+
 .active{
-  color: #93B075;
+  color: var(--my-green);
 }
 html {
   
@@ -22,9 +29,9 @@ html {
 
 body {
   min-height: 100vh;
-  background-color: #3D3B39;
+  background-color: var(--my-black);
 opacity: 1;
-background-image: radial-gradient(circle at center center, #93B075, #3D3B39), repeating-radial-gradient(circle at center center, #93B075, #93B075, 40px, transparent 80px, transparent 40px);
+background-image: radial-gradient(circle at center center, var(--my-green), var(--my-black)), repeating-radial-gradient(circle at center center, var(--my-green), var(--my-green), 40px, transparent 80px, transparent 40px);
 background-blend-mode: multiply;
   text-align: center;
   font-family: "Work Sans", sans-serif;
@@ -173,9 +180,9 @@ main {
   align-items: center;
   gap: 2rem;
   padding: 2rem;
-  background-color: #93B075;
+  background-color: var(--my-green);
 opacity: 1;
-background-image:  radial-gradient(#3D3B39 0.8px, transparent 0.8px), radial-gradient(#3D3B39 0.8px, #93B075 0.8px);
+background-image:  radial-gradient(var(--my-black) 0.8px, transparent 0.8px), radial-gradient(var(--my-black) 0.8px, var(--my-green) 0.8px);
 background-size: 32px 32px;
 background-position: 0 0,16px 16px;
   border-radius: 3px;
@@ -250,7 +257,7 @@ main hr {
 
 .quote-container {
   padding: 16px;
-  background-color: #93B075;
+  background-color: var(--my-green);
   opacity: 0;
   border-radius: 3px;
   filter: drop-shadow(0 0 0 rgba(45, 55, 45, 0.2));
@@ -308,7 +315,7 @@ main hr {
   gap: 8px;
   padding: 16px;
   border-radius: 5px;
-  background: #93B075;
+  background: var(--my-green);
 }
 
 .research-item-container h3 {
@@ -344,7 +351,7 @@ main hr {
 }
 .keyword {
   font-size: 12px;
-  color: #3D3B39;
+  color: var(--my-black);
 }
 /* Per Repo Styles*/
 
@@ -356,7 +363,7 @@ main hr {
   gap: 8px;
   padding: 16px;
   border-radius: 5px;
-  background: #93B075;
+  background: var(--my-green);
 }
 .repository-container h3 {
   text-align: left;
@@ -391,7 +398,7 @@ main hr {
 }
 .language-used {
   font-size: 12px;
-  color: #3D3B39;
+  color: var(--my-black);
 }
 .more-repo {
   margin-top: 10px;
@@ -432,11 +439,11 @@ main hr {
   
 }
 .about-social-container a{
-  color: #93B075;
+  color: var(--my-green);
 }
 
 .greentext {
-  color: #93B075;
+  color: var(--my-green);
 }
 
 
@@ -488,7 +495,7 @@ footer {
   gap: 8px;
   padding: 16px;
   border-radius: 5px;
-  background: #93B075;
+  background: var(--my-green);
 }
 
 .experience-item-container h3 {
@@ -530,7 +537,7 @@ footer {
   gap: 8px;
   padding: 16px;
   border-radius: 5px;
-  background: #93B075;
+  background: var(--my-green);
 }
 
 .award-item-container h3 {
@@ -572,7 +579,7 @@ footer {
   gap: 8px;
   padding: 16px;
   border-radius: 5px;
-  background: #93B075;
+  background: var(--my-green);
 }
 
 .certification-item-container h3 {
@@ -691,7 +698,7 @@ footer {
 .gradient {
   text-align: center;
   font-size: 2rem;
-  background: #93B075;
+  background: var(--my-green);
   background-size: 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
