@@ -12,7 +12,11 @@
 
 
 
-
+.status{
+  color: white;
+  font-size: large;
+  text-align: left;
+}
 
 .active{
   color: var(--my-green);
